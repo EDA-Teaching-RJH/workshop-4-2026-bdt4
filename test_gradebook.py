@@ -76,7 +76,7 @@ class TestGradebook(unittest.TestCase):
         except StopIteration:
             self.fail("Infinite Loop or Input Error: The code kept asking for input but ran out of mock values.")
         except Exception as e:
-            self.fail(f"Crashed during validation test: {e}")
+            self.fail("Crashed during validation test: {e}")
 
         output = self.held_output.getvalue()
         
